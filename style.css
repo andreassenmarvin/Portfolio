@@ -20,10 +20,28 @@ body {
 }
 
 #navbar {
+    display: flex;
+    align-items: center;
     z-index: 4;
     padding: 1%;
 }
 
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+}
+
+#nav-logo {
+    width: 1.5rem;
+    margin: 5px;
+}
+
+#nav-text {
+    font-size: 1.2rem;
+    color: white;
+}
 
 .side-bar {
     position: absolute;

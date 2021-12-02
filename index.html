@@ -12,23 +12,32 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body onload="typing()">
     <div class="overlay"></div>
+    <div class="overlay2"></div>
 
-    <div class="side-bar"></div>
-    
+    <div class="side-bar">
+        <div class="profile">
+            <img src="Assets/avatar.jpg" alt="my image" class="avatar" id="avatar">
+        </div>
+    </div>
+
     <nav class="navbar" id="navbar">
         <a href="index.html" class="navbar-brand">
             <img src="Assets/logo.png" alt="logo" id="nav-logo">
-            <h1 id="nav-text">Marvin.J.Andreassen</h1>
         </a>
 
-        <div class="menu-bar" onmouseover="animation()">
+        <div class="menu-bar" onmouseover="animation()" onmouseleave="noAnimation()">
             <div class="bar-1"></div>
             <div class="bar-2"></div>
             <div class="bar-3"></div>
         </div>
     </nav>
+
+    <div class="intro">
+        <h3 id="greetings">Hello There!</h3>
+        <p id="intro"></p>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

@@ -10,7 +10,7 @@ body {
     height: 100vh;
     font-family: 'Cormorant Garamond', serif;
     -webkit-font-smoothing: antialiased;
-    background: url("./Assets/background.gif");
+    background: url("Assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;

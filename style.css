@@ -93,4 +93,59 @@ body {
 }
 
 
+@keyframes bar1-glow {
+    0% {
+        background-color: rgb(235, 158, 16);
+    }
+
+    50% {
+        background-color: red
+    }
+
+    100% {
+        background-color: rgb(107, 2, 107);
+    }
+}
+
+@keyframes bar2-glow {
+    0% {
+        background-color: rgb(9, 2, 107);
+    }
+
+    50% {
+        background-color: rgb(61, 160, 31);
+    }
+
+    100% {
+        background-color: rgb(153, 66, 15);
+    }
+}
+
+@keyframes bar3-glow {
+    0% {
+        background-color: red;
+    }
+
+    50% {
+        background-color: rgb(107, 2, 107);
+    }
+
+    100% {
+        background-color: rgb(235, 158, 16);
+    }
+}
+
+
+.bar-1-glow {
+    animation: bar1-glow ease .7s;
+}
+
+.bar-2-glow {
+    animation: bar2-glow ease .7s;
+}
+
+.bar-3-glow {
+    animation: bar3-glow ease .7s;
+}
+
 

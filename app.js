@@ -7,7 +7,7 @@ var bar3 = document.querySelector(".bar-3");
 
 
 var i = 0;
-var intro = "My name is Marvin Macharia, a phenomenal web and mobile applications developer." ;
+var intro = "My name is Marvin Macharia; I'm a software developer specialising in both front-end and back-end. I also build mobile applications.";
 var introHead = document.getElementById("intro");
 var speed = 50;
 
@@ -20,9 +20,7 @@ function openMenu() {
         menuBar.classList.remove("click");
         sideBar.classList.remove("side-bar-visible");
         overlay.style.display = "none";
-    }
-
-    else {
+    } else {
         menuBar.classList.add("click");
         sideBar.classList.add("side-bar-visible");
         overlay.style.display = "block";

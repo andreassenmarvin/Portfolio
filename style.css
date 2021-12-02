@@ -132,18 +132,27 @@ body {
     z-index: 3;
     text-align: center;
     color: white;
+    top: 10%;
 }
 
 #greetings {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 60px;
     font-weight: bold;
     margin: 10px;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
 }
 
 #intro {
-    width: 600px;
+    width: 47%;
     font-size: 40px;
     margin: auto;
-    letter-spacing: 0.05em;
+    letter-spacing: 0.02em;
+}
+
+#emoji {
+    font-size: 40px;
+    padding: 10px;
 }

@@ -55,7 +55,40 @@ body {
 
 #nav-logo {
     width: 3rem;
-    margin: 5px;
+}
+
+.sound {
+    position: relative;
+    z-index: 3;
+    display: flex;
+}
+
+.sound i {
+    color: #d92626;
+    font-size: 25px;
+}
+
+.sound p {
+    color: white;
+    font-weight: 600;
+}
+
+.sound .sound-p {
+    font-size: 20px;
+    padding: 0px 7% 0 5%;
+}
+
+.sound #sound-on {
+    display: none;
+    color: #08fdd8;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.sound #sound-off {
+    color: #d92626;
+    font-size: 20px;
+    cursor: pointer;
 }
 
 .side-bar {
@@ -152,9 +185,9 @@ body {
 .bar-1,
 .bar-2,
 .bar-3 {
-    width: 42px;
+    width: 40px;
     height: 3px;
-    margin: 11px;
+    margin: 10px;
     border-radius: 2px;
     background-color: #d92626;
     transition: all linear .3s;

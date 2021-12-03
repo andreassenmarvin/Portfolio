@@ -11,6 +11,8 @@ var index = document.getElementById("index");
 var about = document.getElementById("about");
 var skills = document.getElementById("skills")
 var contact = document.getElementById("contact");
+var on = document.getElementById("sound-on");
+var off = document.getElementById("sound-off");
 
 
 var i = 0;
@@ -86,3 +88,15 @@ function spanRemove() {
 function spanAppend() {
     spanAnimation.classList.remove("span-hover");
 }
+
+$(function() {
+    $(off).click(function() {
+        on.style.display = "block";
+        off.style.display = "none";
+    })
+
+    $(on).click(function() {
+        off.style.display = "block";
+        on.style.display = "none";
+    })
+})

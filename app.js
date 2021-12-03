@@ -4,12 +4,15 @@ var overlay = document.querySelector(".overlay2");
 var bar1 = document.querySelector(".bar-1");
 var bar2 = document.querySelector(".bar-2");
 var bar3 = document.querySelector(".bar-3");
+var explorebtn = document.querySelector(".explore-button");
+var spanAnimation = document.querySelector(".span");
+var children = spanAnimation.childNodes;
 
 
 var i = 0;
 var intro = "My name is Marvin Macharia; I'm a software developer specialising in both front-end and back-end. I also build mobile applications.";
 var introHead = document.getElementById("intro");
-var speed = 50;
+var speed = 90;
 
 
 menuBar.addEventListener("click", openMenu);
@@ -51,4 +54,17 @@ function typing() {
         i++;
         setTimeout(typing, speed);
     }
+
+    else if (i = intro.length) {
+        explorebtn.style.display = "inline-block";
+        $(explorebtn).fadeIn();
+    }
+}
+
+function spanRemove() {
+        spanAnimation.classList.add("span-hover");
+}
+
+function spanAppend() {
+        spanAnimation.classList.remove("span-hover");
 }

@@ -43,7 +43,6 @@ body {
 #navbar {
     display: flex;
     align-items: center;
-    z-index: 5;
     padding: 2%;
 }
 
@@ -176,6 +175,7 @@ body {
 .menu-bar {
     cursor: pointer;
     transition: all linear .4s;
+    z-index: 5;
 }
 
 .menu-bar-hover {

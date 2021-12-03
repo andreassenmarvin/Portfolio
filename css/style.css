@@ -10,10 +10,13 @@ body {
     height: 100vh;
     font-family: 'Cormorant Garamond', serif;
     -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+}
+
+.home-body {
     background: url("../Assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    overflow-x: hidden;
 }
 
 .overlay {
@@ -51,7 +54,7 @@ body {
 }
 
 #nav-logo {
-    width: 2.5rem;
+    width: 3rem;
     margin: 5px;
 }
 
@@ -143,22 +146,18 @@ body {
 }
 
 .menu-bar-hover {
-    animation: bar-glow ease-in-out .9s infinite;
+    animation: bar-glow linear 7s infinite;
 }
 
 .bar-1,
 .bar-2,
 .bar-3 {
-    width: 32px;
+    width: 42px;
     height: 3px;
-    margin: 8px;
+    margin: 11px;
     border-radius: 2px;
-    background-color: rgb(190, 130, 18);
+    background-color: #d92626;
     transition: all linear .3s;
-}
-
-.bar-2 {
-    width: 18px;
 }
 
 .click .bar-1 {
@@ -176,15 +175,27 @@ body {
 
 @keyframes bar-glow {
     0% {
-        background-color: rgb(190, 130, 18);
+        background-color: #d92626;
     }
 
-    50% {
-        background-color: red
+    20% {
+        background-color: #e9b171;
+    }
+
+    40% {
+        background-color: #2d9687;
+    }
+
+    60% {
+        background-color: rgb(190, 130, 18)
+    }
+
+    80% {
+        background-color: #c22085;
     }
 
     100% {
-        background-color: rgb(107, 2, 107);
+        background-color: #e2b8aa;
     }
 }
 
@@ -257,7 +268,7 @@ a:hover {
     height: 100%;
     left: -35%;
     top: 0;
-    background-color: rgb(190, 130, 18);
+    background-color: #d92626;
     transform: skew(50deg);
     transform-origin: top left;
     transition: linear .4s;

@@ -10,7 +10,7 @@ body {
     height: 100vh;
     font-family: 'Cormorant Garamond', serif;
     -webkit-font-smoothing: antialiased;
-    background: url("Assets/background.jpg");
+    background: url("../Assets/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
@@ -100,6 +100,37 @@ body {
 
 .profile h3 {
     font-size: 22px;
+}
+
+.myMenuDiv {
+    list-style: none;
+    padding-left: 0px;
+    margin-top: 1rem;
+}
+
+.myMenuDiv>li>a {
+    color: white;
+    transition: .6s;
+    display: block;
+    margin: .7rem 0px;
+    padding: .7rem 0px;
+    padding-left: 1.2rem;
+}
+
+.myMenuDiv>li>a:hover {
+    border-left: #fff;
+    color: var(--hoverAbleASlideNavTextColor);
+    background: white;
+}
+
+.myFa {
+    font-size: 20px;
+}
+
+.menuText {
+    font-weight: 1;
+    margin-left: 15px;
+    font-size: 18px;
 }
 
 .menu-bar {

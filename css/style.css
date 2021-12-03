@@ -110,12 +110,15 @@ body {
 
 .myMenuDiv>li>a {
     display: block;
-    background-color: #d92626;
     color: white;
     border-left: 1px solid rgba(32, 31, 31, 0.5);
     transition: .6s;
-    margin: .7rem 0px;
-    padding: .7rem 0px;
+    margin: 1rem 0px;
+    padding: 1.5rem 0px 1.5rem 6rem;
+}
+
+.myMenuDiv>li>a:active {
+    background-color: #d92626;
 }
 
 .myMenuDiv>li>a:hover {
@@ -124,8 +127,9 @@ body {
 }
 
 .myFa {
+    display: flex;
+    align-items: center;
     font-size: 20px;
-    color: white;
 }
 
 .menuText {

@@ -7,6 +7,7 @@ var bar3 = document.querySelector(".bar-3");
 var explorebtn = document.querySelector(".explore-button");
 var spanAnimation = document.querySelector(".span");
 var children = spanAnimation.childNodes;
+var index = document.getElementById("index");
 
 
 var i = 0;
@@ -53,18 +54,16 @@ function typing() {
         introHead.innerHTML += intro.charAt(i);
         i++;
         setTimeout(typing, speed);
-    }
-
-    else if (i = intro.length) {
+    } else if (i = intro.length) {
         explorebtn.style.display = "inline-block";
         $(explorebtn).fadeIn();
     }
 }
 
 function spanRemove() {
-        spanAnimation.classList.add("span-hover");
+    spanAnimation.classList.add("span-hover");
 }
 
 function spanAppend() {
-        spanAnimation.classList.remove("span-hover");
+    spanAnimation.classList.remove("span-hover");
 }

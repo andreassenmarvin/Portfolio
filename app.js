@@ -8,6 +8,9 @@ var explorebtn = document.querySelector(".explore-button");
 var spanAnimation = document.querySelector(".span");
 var children = spanAnimation.childNodes;
 var index = document.getElementById("index");
+var about = document.getElementById("about");
+var skills = document.getElementById("skills")
+var contact = document.getElementById("contact");
 
 
 var i = 0;
@@ -20,7 +23,7 @@ menuBar.addEventListener("click", openMenu);
 overlay.addEventListener("click", closeMenu);
 
 function openMenu() {
-    if (menuBar.classList.contains("click")) {
+     if (menuBar.classList.contains("click")) {
         menuBar.classList.remove("click");
         sideBar.classList.remove("side-bar-visible");
         overlay.style.display = "none";
@@ -50,6 +53,22 @@ function noAnimation() {
 }
 
 function typing() {
+    if (window.location.pathname == "/index.html") {
+        index.style.background = "#d92626"
+    }
+
+    else if (window.location.pathname == "/about.html") {
+        about.style.background = "#d92626"
+    }
+
+    else if (window.location.pathname == "/skills.html") {
+        skills.style.background = "#d92626"
+    }
+
+    else if (window.location.pathname == "/contact.html") {
+        contact.style.background = "#d92626"
+    }
+
     if (i < intro.length) {
         introHead.innerHTML += intro.charAt(i);
         i++;

@@ -122,8 +122,7 @@ body {
 }
 
 .myMenuDiv>li>a:hover {
-    color: black;
-    background: white;
+    cursor: pointer;
 }
 
 .myFa {

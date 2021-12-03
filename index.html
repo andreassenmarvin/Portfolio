@@ -67,8 +67,8 @@
         <div class="sound">
             <i class="fab fa-soundcloud"></i>
             <p class="sound-p">Sound</p>
-            <p id="sound-on">ON</p>
-            <p id="sound-off">OFF</p>
+            <p id="sound-on" onclick="audiomute()">ON</p>
+            <p id="sound-off" onclick="audioplay()">OFF</p>
         </div>
 
         <div class="menu-bar" onmouseover="animation()" onmouseleave="noAnimation()">
@@ -92,6 +92,13 @@
             Explore
         </a>
     </div>
+
+    <audio class="music">
+        <source src="sound/miw-voices.webm" type="audio/ogg" />
+        <source src="sound/miw-voices.webm" type="audio/mpeg" />
+      </audio> 
+
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.js"
         integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

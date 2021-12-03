@@ -13,6 +13,7 @@ var skills = document.getElementById("skills")
 var contact = document.getElementById("contact");
 var on = document.getElementById("sound-on");
 var off = document.getElementById("sound-off");
+var music = document.querySelector(".music");
 
 
 var i = 0;
@@ -100,3 +101,11 @@ $(function() {
         on.style.display = "none";
     })
 })
+
+function audioplay() {
+    music.play()
+}
+
+function audiomute() {
+    music.pause()
+}

@@ -8,6 +8,7 @@ body {
     width: 100%;
     max-width: 100%;
     height: 100vh;
+    max-height: 100vh;
     font-family: 'Cormorant Garamond', serif;
     -webkit-font-smoothing: antialiased;
     overflow-x: hidden;
@@ -54,6 +55,7 @@ body {
 
 #nav-logo {
     width: 3rem;
+    z-index: 3;
 }
 
 .sound {

@@ -54,7 +54,7 @@ body {
 }
 
 #nav-logo {
-    width: 3rem;
+    width: 2.5rem;
     z-index: 3;
 }
 
@@ -62,6 +62,7 @@ body {
     position: relative;
     z-index: 3;
     display: flex;
+    margin-top: 1%;
 }
 
 .sound i {
@@ -132,11 +133,16 @@ body {
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+}
+
+.profile h2 {
+    font-size: 27px;
+    font-weight: 600;
 }
 
 .profile h3 {
-    font-size: 22px;
+    font-size: 20px;
 }
 
 .myMenuDiv {
@@ -151,7 +157,7 @@ body {
     border-left: 1px solid rgba(32, 31, 31, 0.5);
     transition: .6s;
     margin: 1rem 0px;
-    padding: 1.5rem 0px 1.5rem 6rem;
+    padding: 1.2rem 0px 1.2rem 6rem;
 }
 
 .myMenuDiv>li>a:active {
@@ -187,9 +193,9 @@ body {
 .bar-1,
 .bar-2,
 .bar-3 {
-    width: 40px;
+    width: 35px;
     height: 3px;
-    margin: 10px;
+    margin: 8px;
     border-radius: 2px;
     background-color: #d92626;
     transition: all linear .3s;
@@ -239,14 +245,14 @@ body {
     z-index: 3;
     text-align: center;
     color: white;
-    top: 7%;
+    top: 5%;
 }
 
 #greetings {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 60px;
+    font-size: 55px;
     font-weight: bold;
     margin: 10px;
     letter-spacing: 0.02em;
@@ -254,7 +260,7 @@ body {
 
 #intro {
     width: 47%;
-    font-size: 40px;
+    font-size: 35px;
     margin: auto;
     letter-spacing: 0.02em;
 }
@@ -267,13 +273,13 @@ body {
 .explore-button {
     position: relative;
     display: none;
-    width: 300px;
+    width: 250px;
     z-index: 3;
     padding: 20px 40px;
-    margin-top: 100px;
+    margin-top: 80px;
     overflow: hidden;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 0.2em;
     text-align: center;
     text-transform: uppercase;
